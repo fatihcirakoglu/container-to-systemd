@@ -1,0 +1,13 @@
+Source: netdata-debian
+Maintainer: Fatih Cirakoglu <fatihcirak@gmail.com>
+Priority: optional
+Build-Depends: debhelper (>=9), dh-systemd
+Standards-Version: 4.3.3
+Homepage: https://github.com/fatihcrk/container-to-systemd
+
+Package: netdata-debian
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Netdata Real-Time Performance Monitoring Tool as a systemd service for Debian Based Linux platforms
+ This package provides Netdata tool as a daemon container service.
+Section: net

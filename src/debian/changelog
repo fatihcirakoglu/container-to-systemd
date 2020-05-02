@@ -1,0 +1,5 @@
+netdata-debian (1.0.0) unstable; urgency=medium
+
+  * Initial release. 
+
+ -- Fatih Cirakoglu  <fatihcirak@gmail.com>  Wed, 28 Apr 2020 14:03:17 +0000

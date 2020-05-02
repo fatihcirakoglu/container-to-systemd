@@ -1,0 +1,23 @@
+#!/bin/sh
+
+echo "-- Enter pre remove script netdata-debian --"
+
+systemctl disable netdata-debian
+systemctl stop netdata-debian
+
+CNAME=netdata-debian.service
+if [ "$(docker ps -qa -f name=$CNAME)" ]; then
+    echo "Found container - $CNAME"
+    if [ "$(docker ps -q -f name=$CNAME)" ]; then
+        echo "Stopping container - $CNAME"
+        docker stop $CNAME;
+    fi
+    echo "Removing container - $CNAME"
+    docker rm $CNAME;
+    echo "Removing docker image netdata/netdata"
+    docker rmi netdata/netdata
+fi
+
+echo "-- Leave pre remove script netdata-debian --"
+echo ""
+exit 0

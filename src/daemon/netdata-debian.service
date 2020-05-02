@@ -1,0 +1,18 @@
+[Unit]
+Description=Netdata Real-Time Performance Monitoring Tool as a systemd service for Debian Based Linux platforms
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/bin/bash /opt/controlNetdataDebian.sh start
+
+ExecStop=/bin/bash /opt/controlNetdataDebian.sh stop
+
+TimeoutStartSec=5min
+Type=simple
+NotifyAccess=all
+User=root
+Group=root
+ 
+[Install]
+WantedBy=multi-user.target

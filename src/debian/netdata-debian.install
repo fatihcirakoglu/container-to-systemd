@@ -1,0 +1,3 @@
+/daemon/netdata-debian.service /lib/systemd/system/
+/netdataDockerImage.tar /opt/
+/controlNetdataDebian.sh /opt/

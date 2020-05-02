@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "-- Enter post install script netdata-debian --"
+
+systemctl daemon-reload
+systemctl enable netdata-debian
+systemctl start netdata-debian
+echo "-- netdata-debian started succcesfully --"
+
+echo "-- Leave post install script netdata-debian --"
+echo ""
+exit 0
