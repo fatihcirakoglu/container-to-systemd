@@ -35,7 +35,7 @@ sudo apt-get install dh-systemd autotools-dev
  
  ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fatihcrk/webdirectory.git`
+- Clone this repo to your local machine using `https://github.com/fatihcirakoglu/webdirectory.git`
  
 ## Build
 - Just clone the repo on your Linux environment and run below command in the folder.
