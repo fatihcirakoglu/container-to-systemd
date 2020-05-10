@@ -1,5 +1,5 @@
 # Container-to-Systemd
-This applciation creates a systemd service based container from a docker image and debianizes it by creatig a DEBIAN package for DEBIAN based Linux distribuitons like Debian GNU/Linux, Ubuntu, Armbian etc. 
+This application creates a systemd service based container from a docker image and debianizes it by creatig a DEBIAN package for DEBIAN based Linux distribuitons like Debian GNU/Linux, Ubuntu, Armbian etc. 
 
 It creates a debian package from docker image mentioned in the script then it creates a docker container and it converts this docker container to a systemd service and enables start, stop and restart of Docker container via systemd service. Also as a systemd service, docker container will be automatically started during boot phase. 
 
@@ -131,7 +131,7 @@ dpkg -i  netdata-debian_1.0.0_amd64.deb
 
 ### Setup
 
-1. After installing DEBIAN package in your LINUX platform, go to webrowser and go to link: 
+1. After installing DEBIAN package in your LINUX platform, go to web browser and go to link: 
 
    http://localhost:19999/
    
